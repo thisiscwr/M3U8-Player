@@ -1,0 +1,39 @@
+#player {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  display: block;
+  margin: 0 auto;
+}
+
+#input-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#video-source {
+  width: 80%;
+  max-width: 600px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#load-button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#m3u8-history {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#history-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#history-list li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}

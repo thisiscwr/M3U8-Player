@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>M3U8 Player</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <video id="player" controls></video>
+
+  <div id="input-container">
+    <input type="text" id="video-source" placeholder="输入 m3u8 视频源 URL">
+    <button id="load-button">加载</button>
+  </div>
+
+  <div id="m3u8-history">
+    <h2>M3U8 播放历史</h2>
+    <ul id="history-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.2.9/dist/hls.min.js"></script>
+</body>
+</html>

@@ -43,9 +43,13 @@ function loadM3U8Player(videoSource) {
 
 function saveToHistory(videoSource) {
     var history = JSON.parse(localStorage.getItem('m3u8History')) || [];
-    history.unshift(videoSource);
-    localStorage.setItem('m3u8History', JSON.stringify(history));
-    addToHistoryList(videoSource);
+    
+    // 检查 videoSource 是否已经存在于 history 数组中
+    if (!history.includes(videoSource)) {
+        history.unshift(videoSource);
+        localStorage.setItem('m3u8History', JSON.stringify(history));
+        addToHistoryList(videoSource);
+    }
 }
 
 function addToHistoryList(videoSource) {
